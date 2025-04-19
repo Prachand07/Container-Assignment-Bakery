@@ -1,4 +1,4 @@
-#Timeless-Bakery
+# Timeless-Bakery
 
 ## **Introduction**
 **Timeless Bakery ** is a modern, full-stack web application designed to deliver an exceptional user experience for both customers and administrators. Developed with a **clean architecture and containerized infrastructure**, this platform offers a seamless interface to explore, filter, and purchase from a wide selection of premium bakery products including cookies, pastries, cakes, and more — all at affordable prices.
@@ -15,7 +15,7 @@
 
 								b) Manage the full product catalog
 
-							  c) Monitor total inventory and order activity in real-time
+							        c) Monitor total inventory and order activity in real-time
 
 #### **Technical Highlights**:
 
