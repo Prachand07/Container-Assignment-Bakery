@@ -11,10 +11,9 @@
 **2) Advanced Filters & Sorting:** Users can browse products by category or price to easily find what they are looking for.
 
 **3) Admin Dashboard:** A secured backend interface allows administrators to:
-
-- a) Create, read, update, and delete (CRUD) orders  
-- b) Manage the full product catalog  
-- c) Monitor total inventory and order activity in real-time
+- Create, read, update, and delete (CRUD) orders  
+- Manage the full product catalog  
+- Monitor total inventory and order activity in real-time
 
 #### **Technical Highlights:**
 
@@ -24,11 +23,11 @@
 
 #### **Tech Stack:**
 
-- **Frontend:** Made using HTML, CSS and JavaScript  
-- **Backend:** Node.js with Express.js  
-- **Database:** PostgreSQL  
-- **Message Broker:** RabbitMQ  
-- **Containerization and Orchestration:** All services are containerized and orchestrated using Docker Compose with health checks. Backend service intelligently waits until both RabbitMQ and PostgreSQL are confirmed healthy before initializing.
+**1) Frontend:** Made using HTML, CSS and JavaScript  
+**2) Backend:** Node.js with Express.js  
+**3) Database:** PostgreSQL  
+**4) Message Broker:** RabbitMQ  
+**5) Containerization and Orchestration:** All services are containerized and orchestrated using Docker Compose with health checks. Backend service intelligently waits until both RabbitMQ and PostgreSQL are confirmed healthy before initializing.
 
 #### **Key Flow:**
 
@@ -66,7 +65,7 @@
 ```bash
 git clone https://github.com/Prachand07/Container-Assignment-Bakery.git
 ```
-2) Navigate to the Project Directory
+**2) Navigate to the Project Directory**
 ```bash
 cd Container-Assignment-Bakery
 
