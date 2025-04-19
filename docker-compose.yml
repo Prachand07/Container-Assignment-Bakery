@@ -1,6 +1,6 @@
 services:
   db:
-    build: ./database
+    build: ./Database
     container_name: bakery-db
     environment:
       POSTGRES_USER: postgres
