@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ellora Bakery Catalog</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav>
+    <h1>Ellora Bakery</h1>
+    <ul>
+      <li><a href="index.html"><button>Home</button></a></li>
+      <li><a href="admin.html"><button>Admin</button></a></li>
+    </ul>
+  </nav>
+
+  <main>
+   
+    <section id="home" class="page active">
+      <div class="controls">
+        <select id="filterCategory" onchange="handleChange()">
+          <option value="">All Categories</option>
+          <option value="Cake">Cake</option>
+          <option value="Bread">Bread</option>
+          <option value="Cookie">Cookie</option>
+        </select>
+
+        <select id="sortOption" onchange="handleChange()">
+          <option value="">Sort by</option>
+          <option value="name_asc">Name ↑</option>
+          <option value="name_desc">Name ↓</option>
+          <option value="price_asc">Price ↑</option>
+          <option value="price_desc">Price ↓</option>
+        </select>
+      </div>
+
+      <div id="productGrid" class="grid"></div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

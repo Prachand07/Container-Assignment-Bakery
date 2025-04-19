@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #fffaf0, #fff2e5);
+    color: #4e342e;
+  }
+  
+  .admin-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  aside {
+    background-color: #ffe5b4;
+    width: 220px;
+    padding: 2rem 1.5rem;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  aside h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #7b3f00;
+    margin-bottom: 2rem;
+  }
+  
+  aside ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  aside li {
+    margin: 1rem 0;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    transition: 0.3s ease;
+  }
+  
+  aside li.active,
+  aside li:hover {
+    background-color: #ffcc80;
+    color: #fff;
+  }
+  
+  main {
+    flex: 1;
+    padding: 2rem 3rem;
+  }
+  
+  main header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  main header h1 {
+    font-size: 2rem;
+    color: #5d4037;
+  }
+  
+  main header button {
+    background-color: #fff3e0;
+    color: #7b3f00;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  main header button:hover {
+    background-color: #ffcc80;
+  }
+  
+  .stats {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .stat-card {
+    background: #fffefb;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+    flex: 1 1 200px;
+    border: 1px solid #fcebd6;
+    transition: 0.3s ease;
+  }
+  
+  .stat-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .stat-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8d6e63;
+  }
+  
+  .recent h2 {
+    margin-bottom: 1rem;
+    color: #5d4037;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fffefb;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+  }
+  
+  thead {
+    background: #ffe0b2;
+    color: #4e342e;
+  }
+  
+  th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #fcebd6;
+  }
+  
+  tbody tr:hover {
+    background-color: #fff3e0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #7b3f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ffcc80;
+}

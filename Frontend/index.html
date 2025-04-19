@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timeless Bakery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #fffaf0 0%, #fff2e5 100%);
+            font-family: 'Poppins', sans-serif;
+            color: #4e342e;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #ffe5b4;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            border-bottom: 2px dashed #ffcc80;
+        }
+
+        nav h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 2rem;
+            color: #7b3f00;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #7b3f00;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff9800;
+        }
+
+
+        .hero {
+            background-image: url('https://content.jdmagicbox.com/comp/dehradun/w6/9999pd135.d135.110228185600.p8w6/catalogue/elloras-bakers-and-confectioners-rajpur-road-dehradun-bakers-and-confectioners-06hyhgsiru.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            color: #fff;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 235, 205, 0.5);
+            /* soft overlay */
+        }
+
+        .hero-text {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            color: #4e342e;
+        }
+
+        .hero-text h2 {
+            font-size: 2.8rem;
+            font-family: 'Pacifico', cursive;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .hero-text button {
+            padding: 0.7rem 1.5rem;
+            background-color: #ffcc80;
+            color: #4e342e;
+            border: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .hero-text button:hover {
+            background-color: #ffb74d;
+            transform: scale(1.05);
+        }
+
+        /* Discount Banner */
+        .discount-banner {
+            background: #fff0e1;
+            color: #bf360c;
+            text-align: center;
+            padding: 1.2rem 1rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border: 2px dotted #ffb74d;
+            margin: 2rem auto;
+            width: 90%;
+            border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+            position: relative;
+            animation: popIn 1s ease;
+        }
+
+        .discount-banner::before,
+        .discount-banner::after {
+            content: "🎁";
+            font-size: 1.5rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .discount-banner::before {
+            left: 1rem;
+        }
+
+        .discount-banner::after {
+            right: 1rem;
+        }
+
+        @keyframes popIn {
+            0% {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+
+        /* Special Offer Section */
+        .specials {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .specials h3 {
+            font-size: 2rem;
+            font-family: 'Pacifico', cursive;
+            margin-bottom: 1rem;
+        }
+
+        .specials p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        /* Map Section */
+        .map {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .map iframe {
+            width: 90%;
+            height: 400px;
+            border: 2px dashed #ffd180;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ffe5b4;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #5d4037;
+            border-top: 2px dashed #ffcc80;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>Timeless Bakery</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Menu</a></li>
+            <li><a href="admin.html">Admin</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-text">
+            <h2>Welcome to Timeless Bakery</h2>
+            <p>Your cozy neighborhood escape for handcrafted cakes, warm breads, and unforgettable flavors — baked fresh
+                with love daily.</p>
+            <button onclick="location.href='services.html'">Explore Our Menu</button>
+        </div>
+    </div>
+
+    <!-- Discount Banner -->
+    <div class="discount-banner">
+        🍩 Special Offer: Enjoy 15% Off On All Orders This Week! 🎉
+    </div>
+
+    <!-- What We Offer -->
+    <section class="specials">
+        <h3>What Makes Us Special</h3>
+        <p>
+            At Timless', we’re more than just a bakery — we’re a memory in the making.
+            From melt-in-your-mouth croissants to decadent cheesecakes, every item is made
+            from scratch using locally sourced ingredients. Our cozy vibes, warm smiles,
+            and unmatched freshness make each visit a treat worth savoring.
+        </p>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map">
+        <h3>Find Us Here</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.7111194664562!2d77.9668366!3d30.415937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d4890d7c1735%3A0x22d3ae324c238e3c!2sUPES!5e0!3m2!1sen!2sin!4v1744796111945!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Timeless Bakery. All rights reserved. | Baked with 💕 in Your City
+    </footer>
+
+</body>
+
+</html>
