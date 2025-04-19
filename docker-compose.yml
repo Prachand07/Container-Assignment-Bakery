@@ -54,6 +54,11 @@ services:
       DB_PASSWORD: Aarush@2004
       DB_NAME: bakerydb
       DB_PORT: 5432
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]  
+      interval: 10s
+      timeout: 5s
+      retries: 3
     deploy:
       resources:
         limits:
@@ -67,6 +72,11 @@ services:
       - "80:80"
     depends_on:
       - backend
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
     deploy:
       resources:
         limits:
